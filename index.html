@@ -4,11 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Carousel</title>
+    <title>Document</title>
 </head>
 <body>
-    
+    <div class="container">
+        <!-- Parte sinistra del carousel -->
+        <div id="slide-principale">
+            <img class="item active" src="img/01.jpg">
+            <img class="item" src="img/02.jpg">
+            <img class="item" src="img/03.jpg">
+            <img class="item" src="img/04.jpg">
+            <img class="item" src="img/05.jpg">
+        </div>
+
+        <!-- Parte destra del carousel -->
+        <div id="slide-scorrevoli">
+            <img class="item-scorrevoli" src="img/01.jpg">
+            <img class="item-scorrevoli" src="img/02.jpg">
+            <img class="item-scorrevoli" src="img/03.jpg">
+            <img class="item-scorrevoli" src="img/04.jpg">
+            <img class="item-scorrevoli" src="img/05.jpg">
+
+            <!-- Comando per scorrere le slide verso l'alto -->
+            <div id="prev">
+                <i class="fas fa-chevron-up"></i>
+            </div>
+
+            <!-- Comando per scorrere le slide verso il basso -->
+            <div id="next">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </div>
+
 
     <script type="text/javascript" src="main.js"></script>
 </body>
