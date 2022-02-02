@@ -65,19 +65,24 @@ let currentSlide = 0;
 
 let items = document.getElementsByClassName('item');
 items[currentSlide].classList.add('active');
-
+let itemScorrevoli=document.getElementsByClassName('item-scorrevoli');
+itemScorrevoli[currentSlide].classList.add('active')
 //Pulsante per scendere
 let next= document.getElementById("next");
 next.addEventListener('click',
     function(){
         if(currentSlide< items.length - 1){
             items[currentSlide].classList.remove('active');
+            itemScorrevoli[currentSlide].classList.remove('active');
             currentSlide++
             items[currentSlide].classList.add('active');
+            itemScorrevoli[currentSlide].classList.add('active');
         }else{
             items[currentSlide].classList.remove('active');
+            itemScorrevoli[currentSlide].classList.remove('active');
             currentSlide=0;
             items[currentSlide].classList.add('active');
+            itemScorrevoli[currentSlide].classList.add('active');
         }
     }
 )
@@ -87,12 +92,16 @@ prev.addEventListener('click',
     function(){
         if(currentSlide> 0){
             items[currentSlide].classList.remove('active');
+            itemScorrevoli[currentSlide].classList.remove('active');
             currentSlide--
             items[currentSlide].classList.add('active');
+            itemScorrevoli[currentSlide].classList.add('active');
         }else{
             items[currentSlide].classList.remove('active');
+            itemScorrevoli[currentSlide].classList.remove('active');
             currentSlide= items.length-1
             items[currentSlide].classList.add('active');
+            itemScorrevoli[currentSlide].classList.add('active');
         }
     }
 )

@@ -55,6 +55,10 @@
     display: flex;
     flex-direction: column;
 }
+.item-scorrevoli.active {
+    border: 2px solid #ccc;
+    opacity: 1;
+}
 .item-scorrevoli{
     height: calc(100% / 5);
 }
